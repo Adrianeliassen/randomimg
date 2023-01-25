@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <img class="box" onclick="visBilde(this)" src="" alt="">
+        <img class="box" onclick="visBilde(this)" src="" alt="">
+        <img class="box" onclick="visBilde(this)" src="" alt="">
+
+    </div>
+
+    <img class="bilder" id="0" src="/img/mario.png" alt="">
+    <img class="bilder" id="1" src="/img/Toad.png" alt="">
+    <img class="bilder" id="2" src="/img/yoshi.png" alt="">
+
+    </div>
+
+
+
+
+    <script>
+        function visBilde(element) {
+            element.src = document.getElementById(`${Math.floor(Math.random() * 3)}`).src
+            console.log(document.getElementById(`${Math.floor(Math.random() * 3)}`).src);
+            //Math.floor(Math.random(3) * max)
+            //document.getElementById('boksen').src=''
+        }
+
+    </script>
+
+</body>
+
+</html>
